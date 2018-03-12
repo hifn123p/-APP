@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exemple.hifn123p.qiandao" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:theme="@style/titlebarstyle" >
+        <activity
+            android:name=".UI.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".UI.Main2Activity"
+            android:label="@string/title_activity_sign_in" >
+        </activity>
+        <activity
+            android:name=".UI.AddActivity"
+            android:label="@string/title_activity_add" >
+        </activity>
+        <activity
+            android:name=".UI.SearchActivity"
+            android:label="@string/title_activity_signin__search" >
+        </activity>
+        <activity
+            android:name=".UI.ManageActivity"
+            android:label="@string/title_activity_manage" >
+        </activity>
+        <activity
+            android:name=".UI.ApplyActivity"
+            android:label="@string/title_activity_apply" >
+        </activity>
+        <activity
+            android:name=".UI.SearchOthersActivity"
+            android:label="@string/title_activity_search_others" >
+        </activity>
+        <activity
+            android:name=".UI.ModifyActivity"
+            android:label="@string/title_activity_modify" >
+        </activity>
+        <activity
+            android:name=".UI.GroupActivity"
+            android:label="@string/title_activity_group" >
+        </activity>
+        <activity
+            android:name=".UI.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name=".ZXING.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_mipca_activity_capture" >
+        </activity>
+    </application>
+
+</manifest>
